@@ -401,7 +401,7 @@
                   style="padding: 10px;">
                   <input
                     v-model="subject"
-                    type="subject" 
+                    type="text" 
                     id="subject" 
                     class="form-control"
                     placeholder="Nome">
@@ -411,9 +411,9 @@
                   class="col-md-12"
                   style="padding: 10px;">
                   <input
-                    v-model="subject"
-                    type="subject" 
-                    id="subject" 
+                    v-model="email"
+                    type="text" 
+                    id="email" 
                     class="form-control"
                     placeholder="Email">
                 </div>
@@ -785,14 +785,12 @@
 
       methods: {        
         sendEmail () {
-          debugger
-
           $.post("send-email.php",
           {
             name: this.name,
             email: this.email,
             subject: this.subject,
-            message: 'Name: ' + this.name + '<br>' + 'Email: ' + this.email + '<br>' + 'Assunto: ' + this.subject + '<br>'+ 'Mensagem: ' + this.message
+            message: 'Nome: ' + this.name + '<br>' + 'Email: ' + this.email + '<br>' + 'Assunto: ' + this.subject + '<br>'+ 'Mensagem: ' + this.message
           },
           function(data, status){
             Swal.fire({
