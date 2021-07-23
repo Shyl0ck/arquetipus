@@ -12,8 +12,8 @@
     $mail = new PHPMailer(true);
 
     try {
-        $toEmail_1 = 'geral@arquetipus.pt'; // $_POST['email'];
-        $toname_1 = 'Arquetipus'; // $_POST['name'];
+        //$toEmail_1 = 'geral@arquetipus.pt'; // $_POST['email'];
+        // $toname_1 = 'Arquetipus'; // $_POST['name'];
 
         $toEmail_2 = 'nelson-matos@hotmail.com'; // $_POST['email'];
         $toname_2 = 'Nelson Matos'; // $_POST['name'];
@@ -33,7 +33,7 @@
 
         //Recipients
         $mail->setFrom('arquetipus3d@gmail.com', 'Arquetipus 3D Website');
-        $mail->addAddress($toEmail_1, $toname_1);
+        // $mail->addAddress($toEmail_1, $toname_1);
         $mail->addAddress($toEmail_2, $toname_2);
 
         //Content
