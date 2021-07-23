@@ -12,8 +12,12 @@
     $mail = new PHPMailer(true);
 
     try {
-        $toEmail = $_POST['email'];
-        $toname = $_POST['name'];
+        $toEmail_1 = 'geral@arquetipus.pt'; // $_POST['email'];
+        $toname_1 = 'Arquetipus'; // $_POST['name'];
+
+        $toEmail_2 = 'nelson-matos@hotmail.com'; // $_POST['email'];
+        $toname_2 = 'Nelson Matos'; // $_POST['name'];
+
         $subject = $_POST['subject'];
         $message = $_POST['message'];
 
@@ -29,7 +33,8 @@
 
         //Recipients
         $mail->setFrom('arquetipus3d@gmail.com', 'Arquetipus 3D Website');
-        $mail->addAddress($toEmail, $toname);
+        $mail->addAddress($toEmail_1, $toname_1);
+        $mail->addAddress($toEmail_2, $toname_2);
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
