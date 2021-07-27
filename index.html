@@ -431,9 +431,9 @@
             </div>
 
             <div class="row align-items-stretch question-row">
-            <div class="col-md-4 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="col-sm-12 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
             </div>
-            <div class="col-md-4 col-lg-4 mb-4 mb-lg-4 question" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-sm-12 col-lg-4 mb-4 mb-lg-4 question" data-aos="fade-up" data-aos-delay="100">
                 <div class="unit-4 d-flex">
                 <div class="unit-4-icon mr-4"><span class="text-primary icon-shopping_cart"></span></div>
                 <div>
@@ -447,7 +447,7 @@
                 <span class="anchor" @click="questionToggled(1, true);">Não</span>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="col-sm-12 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
             </div>
             </div>
 
@@ -455,7 +455,7 @@
                 v-if="question_1 || question_2">
             <div
                 v-if="question_1"
-                class="col-md-4 col-lg-4 mb-4 mb-lg-4 question final-question" >
+                class="col-sm-12 col-lg-4 mb-4 mb-lg-4 question final-question" >
                 <div class="unit-4 d-flex" data-aos="fade-up" data-aos-delay="100">
                 <div class="unit-4-icon mr-4"><span class="text-primary icon-shopping_cart"></span></div>
                 <div>
@@ -466,15 +466,15 @@
             </div>
             <div
                 :class="[{
-                'col-md-4': question_1,
+                'col-sm-12': question_1,
                 'col-lg-4': question_1,
-                'col-md-8': !question_1,
+                'col-sm-12': !question_1,
                 'col-lg-8': !question_1
                 }]">
             </div>
             <div
                 v-if="question_2"
-                class="col-md-4 col-lg-4 mb-4 mb-lg-4 question">
+                class="col-sm-12 col-lg-4 mb-4 mb-lg-4 question">
                 <div class="unit-4 d-flex" data-aos="fade-up" data-aos-delay="100">
                 <div class="unit-4-icon mr-4"><span class="text-primary icon-shopping_cart"></span></div>
                 <div>
@@ -492,9 +492,9 @@
             <div class="row align-items-stretch question-row"
                 v-if="question_3 || question_4">
             <div :class="[{
-                'col-md-4': question_3,
+                'col-sm-12': question_3,
                 'col-lg-4': question_3,
-                'col-md-8': question_4,
+                'col-sm-12': question_4,
                 'col-lg-8': question_4
                 }]"
                 class="mb-4 mb-lg-4" data-aos="fade-up">
@@ -502,7 +502,7 @@
 
             <div
                 v-if="question_3"
-                class="col-md-4 col-lg-4 mb-4 mb-lg-4 question final-question">
+                class="col-sm-12 col-lg-4 mb-4 mb-lg-4 question final-question">
                 <div class="unit-4 d-flex" data-aos="fade-up" data-aos-delay="100">
                 <div class="unit-4-icon mr-4"><span class="text-primary icon-shopping_cart"></span></div>
                 <div>
@@ -514,7 +514,7 @@
 
             <div
                 v-if="question_4"
-                class="col-md-4 col-lg-4 mb-4 mb-lg-4 question final-question">
+                class="col-sm-12 col-lg-4 mb-4 mb-lg-4 question final-question">
                 <div class="unit-4 d-flex" data-aos="fade-up" data-aos-delay="100">
                 <div class="unit-4-icon mr-4"><span class="text-primary icon-shopping_cart"></span></div>
                 <div>
@@ -717,7 +717,7 @@
 
         @media screen and (max-width: 1250px) {
             .header-text {
-                margin-top: 100px;
+                margin-top: 150px;
             }
 
             .header-text h1 {
@@ -731,7 +731,7 @@
 
         @media screen and (max-width: 768px) {
             .header-text {
-                margin-top: 100px;
+                margin-top: 150px;
             }
 
             .header-text h1 {
@@ -745,7 +745,7 @@
 
         @media screen and (max-width: 600px) {
             .header-text {
-                margin-top: 100px;
+                margin-top: 170px;
             }
 
             .header-text h1 {
